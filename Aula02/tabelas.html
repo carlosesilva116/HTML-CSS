@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas em HTML</title>
+</head>
+<body>
+
+    <table border="1"> <!--Tabela-->
+        <thead> <!--Cabeçalho da tabela-->
+            <caption>Lista de Pessoas</caption> 
+            <tr> <!--Linha do cabeçalho-->
+                <th>Nome</th> <!--Coluna do cabeçalho-->
+                <th>Idade</th> <!--Coluna do cabeçalho-->
+                <th>Cidade</th> <!--Coluna do cabeçalho-->
+            </tr>
+        </thead>
+        <tbody> <!--Corpo da tabela-->
+            <tr> <!--Linha da corpo-->
+                <td>Carlos</td> <!--Coluna 1 do corpo-->
+                <td>23</td> <!--Coluna 2 do corpo-->
+                <td>São Paulo</td> <!--Coluna 3 do corpo-->
+            </tr>
+            <tr> <!--Nova linha no corpo-->
+                <td>Bruno</td> <!--Coluna 1 do corpo-->
+                <td>35</td> <!--Coluna 2 do corpo-->
+                <td>Rio de Janeiro</td> <!--Coluna 3 do corpo-->
+            </tr>
+            <tr>
+                <td>Carla</td>
+                <td>22</td>
+                <td>Belo Horizonte</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan=""> Total de pessoas: 3</td> <!-- Célula que ocupa 3 colunas -->
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
