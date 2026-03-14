@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários HTML</title>
+</head>
+<body>
+     <!-- Campo de texto para inserção de dados-->
+    <form 
+    name="cadastroForm" 
+    action="/processarDados"
+    method="post"
+    autocomplete="on">
+
+        <!-- Rótulo para o campo de nome -->
+        <label for="nome">Nome:</label>
+        <!--Campo de texto para inserção de dados-->
+        <input required type="text" 
+        name="nome"
+         id="nome">
+        <!-- Required torna o campo obrigatório -->
+
+        <br/> <br/>
+
+        <label for="email">Email:</label>
+        <input
+        required type="email" 
+        name="email" 
+        id="email"  
+        placeholder="EX: email@dominio.com">
+
+             <br/> <br/>
+
+        <label for="telefone">Telefone:</label>
+        <input 
+        required type="tel"
+        name="telefone" 
+        id="telefone" 
+        placeholder="EX: (00) 00000-0000">
+
+       <br/> <br/>
+
+        <!--Type passaword oculta os caracteres digitados-->
+        <label for="senha">Senha:</label>
+        <input 
+        type="password" 
+        name="senha" 
+        id="senha"
+        placeholder="EX: ********">
+
+         <br/> <br/>
+
+        <label for="idade">Idade:</label>
+        <input 
+        maxlength="3" 
+        type="number"
+        name="idade"
+        id="idade" >
+
+        <br/> <br/>
+
+        <!-- Type date para seleção de data -->
+        <label for="nascimento">Nascimento:</label>
+        <input 
+        type="date"
+        name="nascimento" 
+        id="nascimento">
+
+         <br/> <br/>
+
+        <label for="nascimento">Hora:</label>
+        <input 
+        type="time" 
+        name="horario" 
+        id="horario">
+
+        <br/> <br/>
+
+        <!-- Type color para seleção de cor-->
+        <label for="cor">Cor:</label>
+        <input 
+        type ="color" 
+        name="cor"
+        id="cor">
+
+        <br/> <br/>
+
+        <label for="range">Range:</label>
+        <input 
+        oninput="this.nextElementSibling.textContent = this.value"
+        type="range"
+        min="0" 
+        max="100"
+        value="25" 
+        name="range" 
+        id="range" >
+        <span id="rangeValue">25</span>
+
+        <br/> <br/>
+        <!-- Type file para seleção de arquivos -->
+        <input type="file"  accept="image/*" name="file" id="file">
+
+         <br/> <br/>
+
+        <!-- Type reset para limpar o formulário -->
+        <input type="reset" value="Limpar">
+
+         <br/> <br/>
+
+        <label for="checkbox">Aceito os termos</label>
+        <input type="checkbox" name="termos" id="termos" required>
+
+        <br/> <br/>
+
+        <label for="masculino">Masculino</label>
+        <input type="radio" name="genero" id="masculino" value="masculino">
+        
+
+        <br/>
+
+        <label for="feminino">Feminino</label>
+        <input type="radio"
+        name="genero" 
+        id="feminino" 
+        value="feminino">
+        
+         <br/> <br/>
+        
+        <!--Type button para criar um botão personalizado-->
+        <input type ="button"
+        value="Botão" 
+        onclick="alert('Botão clicado!')">
+
+        <br/> <br/>
+
+        <label for ="mensagem">Mensagem:</label>
+        <br/>
+        <textarea name="mensagem" id="mensagem" rows="5"></textarea>
+
+        <br/> <br/>
+        <label for="cidade">Cidade:</label>
+        <select name="cidade" id="cidade">
+            <option value="">Selecione uma cidade</option>
+            <option value="sao_paulo">São Paulo</option>
+            <option value="rio_de_janeiro">Rio de Janeiro</option>
+            <option value="belo_horizonte">Belo Horizonte</option>
+        </select>
+        
+         <br/> <br/>
+
+        <label for="linguagens">linguagens de Programaçaõ:</label>
+        <br/>
+        <select name="linguagens" multiple size="4" id="linguagens">
+            <option value="c#">C#</option>
+            <option value="python">Python</option>
+            <option value="javascript">JavaScript</option>
+            <option value="java">Java</option>
+        </select>
+
+        <br/> <br/>
+            <label for="navegador">Navegador Favorito:</label>
+            <br/>
+        <input list="navegadores" name="navegador">
+        <datalist id="navegadores">
+            <option value="Google Chrome">
+            <option value="Mozilla Firefox">
+            <option value="Microsoft Edge">
+            <option value="Safari">
+        </datalist>
+
+                <br/> <br/>
+
+                <fieldset>
+                    <label for="Nome">Nome:</label>
+                    <input type="text" name="nomeCliente" id="nomeCliente">
+                    <br/>
+
+                    <label for="Nome">Email:</label>
+                    <input type="text" name="emailCliente" id="emailCliente">
+                </fieldset>
+
+                <br/> <br/>
+
+        <input type="submit" value="Enviar">
+        
+
+    </form>
+    
+</body>
+</html>
