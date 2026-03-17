@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+ /*Css reset - utilizado para resetar margin e padding  padrões dos navegadores*/
+ 
+ body{
+        background-color: #5e4944;
+        padding:80px 50px 20px 50px;
+        /*top, right, bottom, left*/
+
+ }
+
+
+.cabecalho{} /*utilizando class */
+
+#cabecalho{ 
+   /* background-color: #98b177;*/
+} /*utilizando id*/
+ 
+ .titulo-principal{
+        color:#ffffff;
+        font-size: 45px;
+        font-family: Segoe UI;
+        line-height: 1;}
+
+        .subtitulo{
+        }
+
+        .texto-descricao{
+        color:#ffffff;
+        font-size: 13 px;
+        font-family: Segoe UI;
+       }
+
+       .foto-perfil{
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        border:solid 3px #ffffff;
+       
+       }
+
+       a{
+        font-family: Segoe UI;
+        color:#98b177;
+        text-decoration: none;
+         }
+
+         a:hover{
+            color:#ffffff;
+            font-weight: 500;
+         }
+
+    h2{
+        color:#ffffff; 
+        font-family: Segoe UI;
+        margin: 20px 0 5px 0;
+    }
+
+    li{
+        color:#98b177; 
+        font-family: Segoe UI
+    }
+    .esconder{
+        display: none;  /*Display serve para ocultar elementos */
+    }
