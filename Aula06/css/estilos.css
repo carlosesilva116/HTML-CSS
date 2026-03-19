@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+       background: linear-gradient(135deg, #6A72D9, #9d45e6); 
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+.icone-perfil>div{
+    background-color: white;
+    width: 450px;
+    height: 250px;
+}
+.icone-perfil{
+  background: linear-gradient(135deg, #6A72D9, #9d45e6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid rgb(223, 222, 222);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 400px;
+    padding: 60px 20px;
+    border-radius: 10px;
+}
+
+.descricao{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    gap: 20px;
+    padding: 8px 15px;
+    border-radius: 30px;
+    
+}
+
+.button{
+    background: linear-gradient(135deg, #6A72D9, #9d45e6);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+.Nome{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    gap: 10px;
+}
+.habilidades{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    
+    gap: 10px;
+}
+
