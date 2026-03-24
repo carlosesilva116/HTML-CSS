@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Atividade FlexBox 3 Casos</title>
+    <style>
+      .item {
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        padding: 15px;
+        margin: 5px;
+      }
+ 
+      .caso1 {
+        display: flex;
+        width: 400px;
+        height: 200px;
+        background-color: #6200ff;
+ 
+        justify-content: center;
+        align-items: center;
+      }
+ 
+      .caso2 {
+        display: flex;
+        width: 500px;
+        height: 80px;
+        background-color: #f77a7a;
+ 
+        justify-content: space-between;
+        align-items: center;
+      }
+ 
+      .caso3 {
+        display: flex;
+        width: 300px;
+        height: 300px;
+        background-color: #69f18b;
+ 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+ 
+      .bloco {
+        margin-bottom: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Caso 1 — centralizado</h2>
+    <div class="container caso1 bloco">
+      <div class="item">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+    </div>
+ 
+    <h2>Caso 2 — extremidade</h2>
+    <div class="container caso2 bloco">
+      <div class="item">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+    </div>
+ 
+    <h2>Caso 3 — coluna</h2>
+    <div class="container caso3 bloco">
+      <div class="item">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+    </div>
+  </body>
+</html>
