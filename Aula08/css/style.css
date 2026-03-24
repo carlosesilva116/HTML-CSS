@@ -1,0 +1,39 @@
+/* css Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: red;
+    height: 80px;
+    width: 100%;
+}
+
+.container img{
+    max-width: 100%; 
+}
+
+/* @media(max-width:376px){
+.container{
+    background-color: blue;
+}
+ .container img{
+   max-width: 50%; 
+} 
+
+} */
+@media(max-width: 1024px){
+    .container{
+        width: 768px;
+        background-color: burlywood;
+    }
+}
+
+@media(max-width: 768px){
+    .container{
+        width: 100%;
+        background-color: green;
+    }
+}
